@@ -1,6 +1,7 @@
 package com.fyp.alvin.abel;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,11 +15,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class CameraGallery extends Fragment {
 
     ImageView ivImage;
+    Button testBtn;
     Integer REQUEST_CAMERA = 1, SELECT_FILE = 0;
 
     @Nullable
@@ -32,6 +35,18 @@ public class CameraGallery extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         ivImage = view.findViewById(R.id.ivImage);
+        testBtn = view.findViewById(R.id.testBtn);
+
+        testBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getContext(), MainActivity.class);
+                CallNotification callNotification = new CallNotification();
+                callNotification.addNotification(intent);
+
+            }
+        });
 
         FloatingActionButton fab = view.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
