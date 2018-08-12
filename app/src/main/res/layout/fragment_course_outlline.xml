@@ -30,7 +30,8 @@
         android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+     />
 
     <EditText
         android:id="@+id/edit_text"
@@ -57,7 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Update" />
+        android:text="Update"
+        android:textStyle="bold" />
 
 
     <TextView
@@ -67,7 +69,9 @@
         android:layout_above="@+id/edit_tex"
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
-        android:text="Week 1" />
+        android:text="Week 1:"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView5"
@@ -76,7 +80,9 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/textView3"
         android:layout_marginBottom="67dp"
-        android:text="week 2" />
+        android:text="Week 2:"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView"
@@ -84,18 +90,75 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView3"
         android:layout_below="@+id/imageButton"
+        android:layout_marginStart="0dp"
         android:autoText="false"
-        android:text="Lecturer info:" />
+        android:text="Lecturer info:"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editText"
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:text="Tuesday-11-12pm" />
+
+    <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/edit_text"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="97dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="159dp"
+        android:text="Consultation Hours:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/radioButton"
+        android:text="Wednesday:12-1pm" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginStart="110dp"
+        android:text="Dr.Moamin"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="124dp"
+        android:text="Jung@yahoo.com"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="229dp"
+        android:text="Assessment:"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
 
 </RelativeLayout>

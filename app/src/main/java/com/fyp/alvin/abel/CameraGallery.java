@@ -37,7 +37,7 @@ public class CameraGallery extends Fragment {
         ivImage = view.findViewById(R.id.ivImage);
         testBtn = view.findViewById(R.id.testBtn);
 
-        testBtn.setOnClickListener(new View.OnClickListener() {
+        /*testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -46,7 +46,7 @@ public class CameraGallery extends Fragment {
                 callNotification.addNotification(intent);
 
             }
-        });
+        });*/
 
         FloatingActionButton fab = view.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
